@@ -56,6 +56,7 @@ function handleEvent(event) {
     ReplayMessage('公共性新聞媒體',BotRel.sendNews);
     ReplayMessage('資訊相關新聞媒體',BotRel.sendITNews);
     ReplayMessage('資訊相關教學',BotRel.sendITtech);
+    ReplayMessage('喵',BotRel.sendNeko);
 }
 
 

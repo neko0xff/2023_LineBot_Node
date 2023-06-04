@@ -18,7 +18,7 @@ function consoleTime(){
 function lunaDate(){
     function toLunaTime(date) {
         return date.toLocaleString('zh-u-ca-chinese', { dateStyle: 'full' }) + ' ' + date.toLocaleTimeString(0, { hour12: false });
-    }
+    };
     return toLunaTime(new Date);
 }
 

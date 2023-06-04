@@ -21,6 +21,7 @@ var sendPong = [
    }
 ];
 
+/*回傳: 公元*/
 var sendTime = [
    {
       type: 'text',
@@ -28,6 +29,7 @@ var sendTime = [
    }
 ];
 
+/*回傳: 農曆*/
 var sendLuna = [
     {
         type: 'text',
@@ -35,6 +37,7 @@ var sendLuna = [
     }
 ];
 
+/*回傳：Github*/
 var sendGithub = [
     {
         "type": "text",
@@ -42,7 +45,7 @@ var sendGithub = [
     },
     {
         "type": "template",
-        "altText": "this is a buttons template",
+        "altText": "Github Link",
         "template": {
           "type": "buttons",
           "imageAspectRatio": "rectangle",
@@ -58,10 +61,11 @@ var sendGithub = [
     }  
 ];
 
+/*回傳: 新聞媒體*/
 var sendNews = [
     {
         "type": "template",
-        "altText": "this is a carousel template",
+        "altText": "News Link",
         "template": {
           "type": "carousel",
           "columns": [
@@ -91,10 +95,11 @@ var sendNews = [
     }
 ];
 
+/*回傳: 資訊相關新聞媒體*/
 var sendITNews = [
     {
         "type": "template",
-        "altText": "this is a carousel template",
+        "altText": "IT News Link",
         "template": {
           "type": "carousel",
           "columns": [
@@ -145,10 +150,11 @@ var sendITNews = [
     }
 ];
 
+/*回傳: 資訊相關教學*/
 var sendITtech = [
     {
         "type": "template",
-        "altText": "this is a carousel template",
+        "altText": "IT Tech Website Link",
         "template": {
           "type": "carousel",
           "columns": [
@@ -220,6 +226,20 @@ var sendITtech = [
       }
 ];
 
+/*回傳: 貓圖*/
+var sendNeko = [
+  {
+    "type": "image",
+    "originalContentUrl": "https://localhost:3001/cat",
+    "previewImageUrl": "https://localhost:3001/cat"
+  },
+  {
+    "type": "text",
+    "text": "Meow!"
+  }
+];
+
+
 module.exports={
    sendLuna:sendLuna,
    sendPong:sendPong,
@@ -228,5 +248,6 @@ module.exports={
    sendGithub:sendGithub,
    sendNews:sendNews,
    sendITNews:sendITNews,
-   sendITtech:sendITtech
+   sendITtech:sendITtech,
+   sendNeko:sendNeko
 };
