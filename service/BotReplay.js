@@ -227,11 +227,12 @@ var sendITtech = [
 ];
 
 /*回傳: 貓圖*/
+var Nekourl = "https://cdn2.thecatapi.com/images/76u.jpg";
 var sendNeko = [
   {
     "type": "image",
-    "originalContentUrl": "https://localhost:3001/cat",
-    "previewImageUrl": "https://localhost:3001/cat"
+    "originalContentUrl": Nekourl,
+    "previewImageUrl": Nekourl
   },
   {
     "type": "text",

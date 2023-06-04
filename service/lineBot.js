@@ -1,6 +1,7 @@
 const https = require("https");
 const express = require("express");
 const line = require('@line/bot-sdk');
+const axios = require('axios');
 var clock=require('./clock.js');
 var BotRel=require('./BotReplay.js');
 var ConfigParser = require('configparser');
@@ -58,5 +59,18 @@ function handleEvent(event) {
     ReplayMessage('資訊相關教學',BotRel.sendITtech);
     ReplayMessage('喵',BotRel.sendNeko);
 }
+
+app.get('/cat',async function(req,res){
+    var URL = 'https://api.thecatapi.com/v1/images/search';
+    try{
+       const response = await axios.get(URL);
+       const jsonData = response.data[0].url;
+       console.log(jsonData);
+       res.send(jsonData);
+    } catch (error) {
+      console.error('Error:', error.message);
+      res.status(500).send('An error occurred');
+    };
+});
 
 
