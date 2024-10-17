@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@line/bot-sdk": "^7.7.0",
-    "axios": "^1.6.0",
+    "axios": "^1.7.4",
     "configparser": "^0.3.10",
     "express": "^4.21.0",
     "moment": "^2.29.4",
