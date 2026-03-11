@@ -10,7 +10,7 @@
   "author": "neko0xff",
   "license": "ISC",
   "dependencies": {
-    "@line/bot-sdk": "^7.7.0",
+    "@line/bot-sdk": "^10.6.0",
     "axios": "^1.7.4",
     "configparser": "^0.3.10",
     "express": "^4.21.2",
